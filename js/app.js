@@ -8,13 +8,17 @@
     //imgArray [img1 img 2 img3 img4 img5]
     // i       [ 0     1     2    3    4 ]
 
+    let indexImg
     //crea un ciclo for per scorrere le immagini
+    
     for(i = 0; i < imgArray.length; i++){
         // console.log(imgArray[i])
-        // console.log("js funziona")
 
-        const indexImg = i; //number
+
+        let indexImg = i; //number
         let imgSelected = imgArray[indexImg]; //function
+
+ 
 
         const displayElement = document.querySelector(".container");
 
@@ -23,15 +27,22 @@
             <img src="${imgSelected}" alt="">
         </div>
         `
-        selectorIMG = imgSelected
-    
-
+        
+        
       
     }
-// 2- Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
+
+
     const appear = document.querySelector(".item");
 
-    appear.classList.add("d-block");
+        appear.classList.add("d-block");
+    
+    
+    const rightInteraction = document.querySelector(".right")
+    
+  
+// 2- Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
+    
 
    
 
@@ -40,7 +51,8 @@
 
    
     
-
+//Al click dell'utente sulle frecce, 
+//il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
     
     
     
