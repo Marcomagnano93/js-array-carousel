@@ -1,0 +1,46 @@
+.item {
+    width: 400px;
+    height: 400px;
+    display: none;
+    position: relative;
+    
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.d-block {
+    display: block;
+}
+
+/* layout */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* buttons */
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+
+
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+
+}
