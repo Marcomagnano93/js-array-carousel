@@ -11,56 +11,98 @@
    
     //crea un ciclo for per scorrere le immagini
 
-    for(i = 0; i < imgArray.length; i++){
-        // console.log(imgArray[i])
+    
+    const displayElement = document.querySelector(".container");
+
+    
+
+    let selector = 0; //number
+    let classes = ''; //string
+   
 
 
-        let indexImg = i; //number
-        let imgSelected = imgArray[indexImg]; //function
+        for(i = 0; i < imgArray.length; i++){
+            // console.log(imgArray[i])
+            
 
- 
+            selector = selector++; //number
+            if(selector === 0){
+                classes = "d-block"; //string
+            }
+         
+            
+            let indexImg = i; //number
+            let imgSelected = imgArray[indexImg]; //function
+    
+            
+    
+            displayElement.innerHTML += `
+            <div class="item no-visual ${classes}">
+                <img src="${imgSelected}" alt="">
+            </div>
+            `
+            const rightInteraction = document.querySelector(".right");
+            rightInteraction.addEventListener("click",
+                function() {
+        
+                    
+                    
+                  
+        
+        
+                })
+        }
 
-        const displayElement = document.querySelector(".container");
 
-        displayElement.innerHTML += `
-        <div class="item">
-            <img src="${imgSelected}" alt="">
-        </div>
-        `
-        console.log(indexImg)
+        
 
-        // 2- Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
+
+
+
+            // 2- Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
 // 3- Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1,
 // ma costruito dinamicamente attraverso JavaScript.
 
-        const appear = document.querySelector(".item");
 
-        appear.classList.add("d-block");
-        
 
-    }
+
+
 //Al click dell'utente sulle frecce, 
 //il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
 
-        const rightInteraction = document.querySelector(".right");
-
-        rightInteraction.addEventListener("click",
-        function(){
-
-            const allItems = document.getElementsByClassName("item");
-
-            for(index = 0; i < allItems.length; index++){
-
-                let selector = index;
-                
-                
-
-            }
 
 
-        })
+
+
+
+        // const rightInteraction = document.querySelector(".right");
+
+        // rightInteraction.addEventListener("click",
+        // function(){
+
+            
+
+
+        //     const allItems = document.getElementsByClassName("item");
+
+        // let selectedImg = 0; //number
+        // for(index = 0; i < allItems.length; index++){
+
+
+        //     selectedImg ++
+        //     let selector = index;
+            
+        //     console.log(selectedImg)
+
+        // }
+            
+
+
+        
+
+        // })
    
-
+        
     
 
        
