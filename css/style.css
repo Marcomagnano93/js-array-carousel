@@ -1,7 +1,7 @@
 .item {
     width: 400px;
     height: 400px;
-    display: none;
+    /* display: none; */
     position: relative;
     
 }
