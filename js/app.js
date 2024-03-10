@@ -6,36 +6,13 @@
     
     //metti tutte le immagini in un array
 
-    const imgArray = ["./img/01.webp", "./img/02.webp", "./img/03.webp", "./img/04.webp", "./img/05.webp"] //String array
-    //imgArray [img1 img 2 img3 img4 img5]
-    // i       [ 0     1     2    3    4 ]
 
-   
+    const imgArray = ["./img/01.webp", "./img/02.webp", "./img/03.webp", "./img/04.webp", "./img/05.webp"] //String array
+
     //crea un ciclo for per scorrere le immagini
 
     
     const displayElement = document.querySelector(".container");
-
-    
-
-    
-    
-   
-
-    
-        // const rightInteraction = document.querySelector(".right");
-
-        // rightInteraction.addEventListener("click",
-        // function(){
-
-        //     selector = selector + 1; //number
-
-        //     if(selector === 1){
-        //         classes = "d-block"; //string
-        //     }
-
-        // })
-
 
         let selector = 0; //number
         let classes = ''; //string
@@ -56,14 +33,14 @@
 
             displayElement.innerHTML += `
                 <div class="item ${classes}">
-                    <img src="${imgSelected}" alt="">
+                    <img src="${imgSelected}" alt=""}>
                 </div>
             `
            
         
         }
 
-
+        //CICLO RIGHT
 
 
         const rightInteraction = document.querySelector(".right");
@@ -104,7 +81,7 @@
                 }
         })
         
-
+        //CICLO LEFT
 
         const leftInteraction = document.querySelector(".left");
         leftInteraction.addEventListener("click",
@@ -144,62 +121,8 @@
                 }
         })
 
-
-    // const rightInteraction = document.querySelector(".right");
-            // rightInteraction.addEventListener("click",
-            //     function() {
-                  
-        
-        
-            //     })
-
-
-          
-
-
-
-            //  if(selector === 1){
-            //      classes = "d-block"; //string
-            //  }
-
-            // })
-
-
-
 //Al click dell'utente sulle frecce, 
 //il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
-
-
-
-
-
-
-        // const rightInteraction = document.querySelector(".right");
-
-        // rightInteraction.addEventListener("click",
-        // function(){
-
-            
-
-
-        //     const allItems = document.getElementsByClassName("item");
-
-        // let selectedImg = 0; //number
-        // for(index = 0; i < allItems.length; index++){
-
-
-        //     selectedImg ++
-        //     let selector = index;
-            
-        //     console.log(selectedImg)
-
-        // }
-            
-
-
-        
-
-        // })
    
         
     
